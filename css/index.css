@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #EEEEEE;
+}
+header{
+    background-color: #6549d2;
+    height: 40vh;
+}
+header .info-app {
+    color: #fff;
+    margin-top: 6%;
+}
+/**Contenedores de ingreso y gastos**/
+.cont-secciones{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    position: relative;
+    top: -50px;
+    color: #fff;
+}
+/**media del contenedor**/
+@media(max-width: 680px){
+    .cont-secciones{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.seccion {
+    padding: 10px 25px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.47);
+    moz-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.47);
+    box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.47);
+}
+/**media de las secciones**/
+@media(max-width: 680px){
+    .seccion{
+        margin-top: 10px;
+    }
+}
+.seccion h2{
+    font-size: 10px;
+}
+.seccion h2 span{
+    font-size: 50px;
+}
+.gastos{
+    background: rgb(238,86,120);
+    background: linear-gradient(310deg, rgba(238,86,120,1) 12%, rgba(231,137,158,1) 100%);
+}
+
+.ingresos{
+    background: rgb(28,148,97);
+    background: linear-gradient(310deg, rgba(28,148,97,1) 12%, rgba(63,179,130,1) 100%);
+}
+
+.btn-view{
+    background-color: #fff6;
+    border-radius: 15px;
+    padding: 1px 15px;
+    color: #fff;
+    font-size: 15px;
+}
+/**FORMULARIO**/
+.cont-form form{
+    display: grid;
+    grid-template-columns: 30% 30% 20% 10%;
+    column-gap: 20px;
+    padding: 0;
+}
+/**media del formulario**/
+@media(min-width: 768px){
+    .cont-form form{
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    
+}
+@media(max-width: 680px){
+    .cont-form form{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+.cont-form form input, 
+.cont-form form select{
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+/**media de los inputs del formulario**/
+@media(max-width: 680px){
+    .cont-form form input, 
+    .cont-form form select{
+        margin-top: 10px;
+    }
+    .btn-add{
+        margin-top: 10px;
+    }
+}
+.btn-add{
+    background-color: #6549d2!important;
+    color: #fff;
+    border-radius: 20px;
+    padding: 1px 20px;
+}
+
+/**LISTADO**/
+.cont-list {
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 5%;
+    padding: 10px 20px;
+}
+.cont-list .tabla table{
+    width: 100%;
+}
+.cont-list .tabla table tr td{
+    color: #909090;
+    margin-top: 5px;
+    
+}
+.icon{
+    font-size: 20px;
+    color: #fff;
+}
+.bg-icon{
+    background-color: #6549d2;
+}
